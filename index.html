@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+    <title>Demostración de border radius</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="layoutPrincipal">
+
+        <div class="carta">
+            <h1>Demostración del atributo border radius</h1>
+                <div id="cuadrado_preview" class="cuadrado">
+                    <p id="parrafo_prueba"></p>
+                </div>
+                <input type="range" id="slider_br" oninput="cambiar_br()" max="50">
+            </div>
+        </div>
+
+        <div class="carta">
+            <h1>Copiar código</h1>
+            <div class="carta">
+                <p id="parrafo_codigo"></p>
+            </div>
+            <input type="button" class="boton" value="Copiar código" onclick="copiar_texto()">
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
